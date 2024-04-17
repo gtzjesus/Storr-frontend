@@ -20,7 +20,7 @@ const StyledLanding = styled.div`
   // Code logic for setting the background
   // Design background from Figma software
   background: url('backgrounds/landing.webp');
-  background-size: cover;
+  background-size: contain;
 
   // Code logic for covering full-screen devices
   min-height: 100vh;
@@ -28,7 +28,7 @@ const StyledLanding = styled.div`
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Design background from Figma software
-    background-image: url('backgrounds/landing_second.webp');
+    background-image: url('backgrounds/landing.webp');
   }
 `;
 
