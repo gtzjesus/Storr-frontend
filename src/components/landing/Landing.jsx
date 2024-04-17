@@ -17,18 +17,18 @@ import styled from 'styled-components';
 // This section has all CSS styles configured for every HTML element.
 
 const StyledLanding = styled.div`
-  // Code logic for setting the background
-  // Design background from Figma software
+  // Set the background image
   background: url('backgrounds/landing.webp');
-  background-size: cover;
+  background-size: cover; // Scale the background image to cover the entire element
+  background-repeat: no-repeat; // Prevent the image from repeating
+  background-position: center; // Center the background image
 
   // Code logic for covering full-screen devices
   min-height: 70vh;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
-    background-image: url('backgrounds/landing.webp');
+    // Adjustments for larger devices can go here
   }
 `;
 
