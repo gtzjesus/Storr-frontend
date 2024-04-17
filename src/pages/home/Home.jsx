@@ -29,6 +29,9 @@ function Home() {
         <BannerContainer>
           <Banner />
         </BannerContainer>
+      </ResponsiveContainer>
+      <Landing />
+      <ResponsiveContainer>
         <BannerContainer>
           <BannerSecond />
         </BannerContainer>
