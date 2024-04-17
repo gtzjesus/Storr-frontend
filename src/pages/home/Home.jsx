@@ -11,6 +11,10 @@ const ResponsiveContainer = styled.div`
   }
 `;
 
+const BannerContainer = styled.div`
+  overflow-x: hidden; /* Hide horizontal overflow */
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -21,7 +25,9 @@ function Home() {
     <>
       <Landing />
       <ResponsiveContainer>
-        <Banner />
+        <BannerContainer>
+          <Banner />
+        </BannerContainer>
       </ResponsiveContainer>
     </>
   );
