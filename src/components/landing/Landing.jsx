@@ -27,7 +27,7 @@ const StyledLanding = styled.div`
   min-height: 100vh;
 
   // Apply grayscale filter
-  filter: blur(1px);
+  filter: blur(2.5px);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -42,6 +42,7 @@ const Hook = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: var(--padding-xlarge) var(--padding-small);
+  z-index: 9999;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -103,24 +104,21 @@ const Subtitle = styled.span`
 function Landing() {
   return (
     <>
-      {/* <!-- Main Container --> */}
-      <StyledLanding>
-        {/* <!-- Hook Container --> */}
-        <Hook>
-          <Title>Storr</Title>
-          <SpecialTitle>LLC</SpecialTitle>
+      <Hook>
+        <Title>Storr</Title>
+        <SpecialTitle>LLC</SpecialTitle>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <Subtitle>Southwest </Subtitle>
-          <Subtitle>Texas</Subtitle>
-          <Subtitle>Off Road</Subtitle>
-          <Subtitle>Racing.</Subtitle>
-        </Hook>
-      </StyledLanding>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Subtitle>Southwest </Subtitle>
+        <Subtitle>Texas</Subtitle>
+        <Subtitle>Off Road</Subtitle>
+        <Subtitle>Racing.</Subtitle>
+      </Hook>
+      <StyledLanding />
     </>
   );
 }
