@@ -62,6 +62,21 @@ const Title = styled.span`
   }
 `;
 
+const SpecialTitle = styled.span`
+  line-height: var(--line-height-small);
+  font-size: var(--font-small);
+  letter-spacing: var(--spacing-title);
+  text-transform: uppercase;
+  overflow: hidden;
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    // Design background from Figma software
+    font-size: var(--font-xlarge);
+    line-height: var(--line-height-medium);
+  }
+`;
+
 const Subtitle = styled.span`
   // Code logic for subtitle element
   font-size: var(--font-xsmall);
@@ -89,22 +104,21 @@ function Landing() {
       <StyledLanding>
         {/* <!-- Hook Container --> */}
         <Hook>
-          <Title>Title</Title>
           <Title>Storr</Title>
+          <SpecialTitle>LLC</SpecialTitle>
+
           <br />
           <br />
           <br />
           <br />
           <br />
-          <Subtitle>Get a </Subtitle>
-          <Subtitle>website</Subtitle>
-          <Subtitle>that transforms</Subtitle>
-          <Subtitle>your visitors</Subtitle>
-          <Subtitle>into customers.</Subtitle>
-          <br />
+          <Subtitle>Southwest </Subtitle>
+          <Subtitle>Texas</Subtitle>
+          <Subtitle>Off Road</Subtitle>
+          <Subtitle>Racing.</Subtitle>
         </Hook>
       </StyledLanding>
-      </>
+    </>
   );
 }
 
