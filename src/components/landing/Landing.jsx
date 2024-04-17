@@ -20,10 +20,10 @@ const StyledLanding = styled.div`
   // Code logic for setting the background
   // Design background from Figma software
   background: url('backgrounds/landing.webp');
-  background-size: contain;
+  background-size: cover;
 
   // Code logic for covering full-screen devices
-  min-height: 100vh;
+  min-height: 70vh;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
