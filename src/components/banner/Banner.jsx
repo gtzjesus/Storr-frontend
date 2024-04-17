@@ -23,15 +23,15 @@ const moveText = keyframes`
   }
 `;
 
-// Styled components for the text container and text elements
+// Styled component for the logo container
 const LogoContainer = styled.div`
   display: flex;
   width: fit-content;
   margin: 0 auto;
-  overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+  overflow: hidden; // Hide overflow to prevent horizontal scrollbar
   white-space: nowrap;
-  animation: ${moveText} 5s linear infinite alternate; /* Apply animation */
   padding: var(--padding-medium) 0;
+  animation: ${moveText} 10s linear infinite alternate; // Apply the animation
 `;
 
 const Logo = styled.img`
