@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Landing from '../../components/landing/Landing';
+import Banner from '../../components/banner/Banner';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -15,11 +16,11 @@ const ResponsiveContainer = styled.div`
 // ------------------------------
 // This section has our React Component which handles the data
 function Home() {
-    
   // Code Logic HTML (styled-components)
   return (
     <>
       <Landing />
+      <Banner />
     </>
   );
 }

@@ -24,7 +24,7 @@ const StyledLanding = styled.div`
   background-position: center; // Center the background image
 
   // Code logic for covering full-screen devices
-  min-height: 80vh;
+  min-height: 70vh;
 
   // Apply grayscale filter
   filter: blur(2.5px);
@@ -104,7 +104,7 @@ const Subtitle = styled.span`
 function Landing() {
   return (
     <>
-      <Hook>
+      {/* <Hook>
         <Title>Storr</Title>
         <SpecialTitle>LLC</SpecialTitle>
 
@@ -117,7 +117,7 @@ function Landing() {
         <Subtitle>Texas</Subtitle>
         <Subtitle>Off Road</Subtitle>
         <Subtitle>Racing.</Subtitle>
-      </Hook>
+      </Hook> */}
       <StyledLanding />
     </>
   );
