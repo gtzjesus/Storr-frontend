@@ -24,7 +24,7 @@ const StyledLanding = styled.div`
   background-position: center; // Center the background image
 
   // Code logic for covering full-screen devices
-  min-height: 100vh;
+  min-height: 80vh;
 
   // Apply grayscale filter
   filter: blur(2.5px);
