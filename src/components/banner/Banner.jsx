@@ -27,6 +27,7 @@ const moveText = keyframes`
 const LogoContainer = styled.div`
   display: flex;
   width: fit-content;
+  margin: 0 auto;
   overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
   white-space: nowrap;
   animation: ${moveText} 5s linear infinite alternate; /* Apply animation */
