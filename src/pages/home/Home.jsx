@@ -20,7 +20,9 @@ function Home() {
   return (
     <>
       <Landing />
-      <Banner />
+      <ResponsiveContainer>
+        <Banner />
+      </ResponsiveContainer>
     </>
   );
 }
