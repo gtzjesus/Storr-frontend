@@ -45,9 +45,14 @@ const Logo = styled.img`
 function Banner() {
   return (
     <LogoContainer>
+      <Logo src="/logos/union.webp"></Logo>
+      <Logo src="/logos/polanco.webp"></Logo>
       <Logo src="/logos/dxl.webp"></Logo>
       <Logo src="/logos/pallares.webp"></Logo>
       <Logo src="/logos/rezas.webp"></Logo>
+      <Logo src="/logos/shaellers.webp"></Logo>
+      <Logo src="/logos/proauto.webp"></Logo>
+      <Logo src="/logos/smh.webp"></Logo>
     </LogoContainer>
   );
 }
