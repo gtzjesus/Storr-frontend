@@ -26,6 +26,9 @@ const StyledLanding = styled.div`
   // Code logic for covering full-screen devices
   min-height: 100vh;
 
+  // Apply grayscale filter
+  filter: blur(5px);
+
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Adjustments for larger devices can go here
