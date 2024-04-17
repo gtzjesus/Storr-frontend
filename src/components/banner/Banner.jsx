@@ -35,7 +35,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 10vh;
+  height: 7.5vh;
 `;
 
 // ------------------------------
@@ -45,14 +45,14 @@ const Logo = styled.img`
 function Banner() {
   return (
     <LogoContainer>
-      <Logo src="/logos/union.webp"></Logo>
-      <Logo src="/logos/polanco.webp"></Logo>
-      <Logo src="/logos/dxl.webp"></Logo>
-      <Logo src="/logos/pallares.webp"></Logo>
-      <Logo src="/logos/rezas.webp"></Logo>
-      <Logo src="/logos/shaellers.webp"></Logo>
-      <Logo src="/logos/proauto.webp"></Logo>
-      <Logo src="/logos/smh.webp"></Logo>
+      <Logo src="/logos/union.webp" alt="Union Logo" />
+      <Logo src="/logos/polanco.webp" alt="Polanco Logo" />
+      <Logo src="/logos/dxl.webp" alt="DXL Logo" />
+      <Logo src="/logos/pallares.webp" alt="Pallares Logo" />
+      <Logo src="/logos/rezas.webp" alt="Rezas Logo" />
+      <Logo src="/logos/shaellers.webp" alt="Shaellers Logo" />
+      <Logo src="/logos/proauto.webp" alt="Proauto Logo" />
+      <Logo src="/logos/smh.webp" alt="SMH Logo" />
     </LogoContainer>
   );
 }
