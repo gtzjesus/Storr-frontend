@@ -31,12 +31,12 @@ const LogoContainer = styled.div`
   overflow: hidden; // Hide overflow to prevent horizontal scrollbar
   white-space: nowrap;
   padding: var(--padding-medium) 0;
-  animation: ${moveText} 12.5s linear infinite alternate; // Apply the animation
+  animation: ${moveText} 10s linear infinite alternate; // Apply the animation
 `;
 
 const Logo = styled.img`
-  padding-right: 50px;
-  height: 7.5vh;
+  padding-right: 25px;
+  height: 8.5vh;
 `;
 
 // ------------------------------
