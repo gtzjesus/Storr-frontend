@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Landing from '../../components/landing/Landing';
 import Banner from '../../components/banner/Banner';
+import BannerSecond from '../../components/banner/BannerSecond';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -27,6 +28,9 @@ function Home() {
       <ResponsiveContainer>
         <BannerContainer>
           <Banner />
+        </BannerContainer>
+        <BannerContainer>
+          <BannerSecond />
         </BannerContainer>
       </ResponsiveContainer>
     </>
