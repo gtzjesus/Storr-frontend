@@ -3,6 +3,7 @@ import Landing from '../../components/landing/Landing';
 import Banner from '../../components/banner/Banner';
 import Navigation from '../../navigation/Navigation';
 import Ad from '../../components/ad/Ad';
+import Footer from '../../footer/Footer';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -34,6 +35,7 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
         <Ad />
+        <Footer />
       </ResponsiveContainer>
     </>
   );

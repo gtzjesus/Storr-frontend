@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
     --color-yellow: #e7e167;
     --color-white: #FFF;
     --color-super-white: #FFFF
-    --color-blue: #455e71;
+    --color-blue: #006ED4;
     --color-link: #006ED4;
     --color-green: #6A7744;
     --color-tan: #FAF0E6;
@@ -66,6 +66,8 @@ const GlobalStyles = createGlobalStyle`
     --font-form: 0.75rem;
     --font-links: 1.75rem;
     --font-smmd: 1.95rem;
+    --font-copyright: 0.95rem;
+
 
 
 
