@@ -35,8 +35,8 @@ function Home() {
         </BannerContainer>
       </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
-        <Ad />
-        {/* <Video /> */}
+        {/* <Ad /> */}
+        <Video />
         <Footer />
       </ResponsiveContainer>
     </>
