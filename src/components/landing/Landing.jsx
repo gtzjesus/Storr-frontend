@@ -27,7 +27,6 @@ const StyledLanding = styled.div`
   min-height: 70vh;
 
   // Apply grayscale filter
-  filter: blur(2.5px);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {

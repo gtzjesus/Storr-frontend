@@ -21,10 +21,10 @@ const GlobalStyles = createGlobalStyle`
     --height-percentage-window: 100%;
     --height-row: 10rem;
     --height-navigation: 3.5rem;
+    --height-navigation-responsive: 5rem;
 
-    /* Extra Heights */
-    --height-navigation-padding: 5rem;
-    --height-navigation-padding-40-em: 10rem;
+
+
 
         /* Line Height */
     --line-height-xsmall: 1.5rem;

@@ -50,14 +50,19 @@ const StyledNav = styled.nav`
   z-index: var(--z-top);
   height: var(--height-navigation);
   transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    height: var(--height-navigation-responsive);
+  }
 `;
 
 const Object = styled.div`
   padding: 0 var(--padding-small);
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
     padding: 0 var(--padding-xxlarge);
+    padding-top: 1.25rem;
   }
   padding-top: 0.75rem;
 `;
@@ -66,7 +71,6 @@ const Hamburger = styled.div`
   padding: 0 var(--padding-small);
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
     padding: 0 var(--padding-xxlarge);
   }
 `;
@@ -74,10 +78,17 @@ const Hamburger = styled.div`
 const Icon = styled.a`
   height: var(--font-small);
   cursor: pointer; /* Add cursor pointer */
+  @media (min-width: 61.25em) {
+    height: var(--font-large);
+  }
 `;
 
 const Logo = styled.img`
   height: var(--font-medium);
+
+  @media (min-width: 61.25em) {
+    height: var(--font-xlarge);
+  }
 `;
 
 const MenuContainer = styled.div`
