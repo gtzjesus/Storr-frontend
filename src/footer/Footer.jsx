@@ -84,7 +84,9 @@ function Footer() {
       <Signature>
         <Sponsor src="/sponsors/kongster.webp" alt="Kongster Sponsor" />
         <Sponsor src="/sponsors/union.webp" alt="Union Sponsor" />
-        <Sponsor src="/sponsors/dxl.webp" alt="DXL Sponsor" />
+        <a target="_blank" href="https://www.desertxlizard.com">
+          <Sponsor src="/sponsors/dxl.webp" alt="DXL Sponsor" />
+        </a>
       </Signature>
 
       <Signature>
