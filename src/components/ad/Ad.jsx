@@ -61,6 +61,7 @@ const Title = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-xlarge);
     line-height: var(--line-height-medium);
+    margin-right: var(--padding-giant);
   }
 `;
 

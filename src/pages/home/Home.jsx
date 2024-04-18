@@ -28,9 +28,11 @@ function Home() {
     <>
       <Navigation />
       <Landing />
-      <BannerContainer>
-        <Banner />
-      </BannerContainer>
+      <ResponsiveContainer>
+        <BannerContainer>
+          <Banner />
+        </BannerContainer>
+      </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
         <Ad />
       </ResponsiveContainer>
