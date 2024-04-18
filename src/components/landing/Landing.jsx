@@ -53,13 +53,13 @@ const StyledLanding = styled.div`
 const Hook = styled.div`
   // Code logic for positioning all information inside our hook
   position: absolute;
-  top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: var(--padding-xlarge) var(--padding-small);
+  padding: var(--padding-xxxlarge) 0;
   z-index: 9999;
   color: var(--color-white);
+  text-align: center;
+  width: 100vw;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -123,12 +123,9 @@ function Landing() {
   return (
     <>
       <Hook>
-        <Title>Storr</Title>
-        <SpecialTitle>LLC</SpecialTitle>
-        <Subtitle>Southwest </Subtitle>
-        <Subtitle>Texas</Subtitle>
-        <Subtitle>Off Road</Subtitle>
-        <Subtitle>Racing.</Subtitle>
+        <Title>Ready to race?</Title>
+        <SpecialTitle>Best in the desert</SpecialTitle>
+        <Subtitle>Best in the desert.</Subtitle>
       </Hook>
       <StyledLanding />
     </>
