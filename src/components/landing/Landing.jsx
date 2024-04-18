@@ -42,8 +42,8 @@ const Hook = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-xxxlarge) 0;
-  z-index: 9999;
+  padding: var(--padding-giant) 0;
+  z-index: 99;
   color: var(--color-white);
   text-align: center;
   width: 100vw;
@@ -112,7 +112,6 @@ function Landing() {
       <Hook>
         <Title>Ready to race?</Title>
         <SpecialTitle>Best in the desert</SpecialTitle>
-        <Subtitle>Best in the desert.</Subtitle>
       </Hook>
       <StyledLanding />
     </>
