@@ -27,7 +27,7 @@ const StyledFooter = styled.footer`
 `;
 
 const Logo = styled.img`
-  height: var(--font-large);
+  height: var(--font-xlarge);
 `;
 
 const SocialMedia = styled.div`
@@ -49,6 +49,7 @@ const Icon = styled.img`
 const Signature = styled.div`
   display: flex;
   justify-content: center;
+  gap: var(--gap-medium);
 `;
 
 const Sponsor = styled.img`
@@ -82,33 +83,28 @@ function Footer() {
 
       <Signature>
         <Sponsor src="/sponsors/kongster.webp" alt="Kongster Sponsor" />
+        <Sponsor src="/sponsors/union.webp" alt="Union Sponsor" />
         <Sponsor src="/sponsors/dxl.webp" alt="DXL Sponsor" />
       </Signature>
 
       <Signature>
-        <Sponsor src="/sponsors/union.webp" alt="Union Sponsor" />
-      </Signature>
-
-      <Signature>
-        <Sponsor src="/sponsors/polanco.webp" alt="Polanco Sponsor" />
+        <Sponsor src="/sponsors/proauto.webp" alt="Proauto Sponsor" />
         <Sponsor src="/sponsors/shaellers.webp" alt="Shaellers Sponsor" />
+        <Sponsor src="/sponsors/polanco.webp" alt="Polanco Sponsor" />
+        <Sponsor src="/sponsors/fina.webp" alt="Fina Sponsor" />
       </Signature>
 
       <Signature>
         <Sponsor src="/sponsors/baja.webp" alt="Baja Sponsor" />
         <Sponsor src="/sponsors/pallares.webp" alt="Pallares Sponsor" />
-      </Signature>
-
-      <Signature>
         <Sponsor src="/sponsors/rezas.webp" alt="Rezas Sponsor" />
         <Sponsor src="/sponsors/utv.webp" alt="Utv Sponsor" />
         <Sponsor src="/sponsors/smh.webp" alt="SMH Sponsor" />
       </Signature>
 
-      <Signature>
-        <Sponsor src="/sponsors/proauto.webp" alt="Proauto Sponsor" />
-        <Sponsor src="/sponsors/fina.webp" alt="Fina Sponsor" />
-      </Signature>
+      <Signature></Signature>
+
+      <Signature></Signature>
 
       <Signature>
         <Copyright>
