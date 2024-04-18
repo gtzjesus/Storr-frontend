@@ -62,8 +62,7 @@ function Video() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
+
       <VideoContainer>
         <VideoIframe
           src="https://www.youtube.com/embed/Vua1KPP9hfY"

@@ -23,7 +23,7 @@ const SponsorContainer = styled.div`
 `;
 
 const Sponsor = styled.img`
-  padding-right: var(--padding-xxsmall);
+  padding-right: var(--padding-small);
 `;
 
 // Component
