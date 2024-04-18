@@ -42,7 +42,7 @@ const Hook = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-giant) 0;
+  padding: var(--padding-xxxlarge) 0;
   z-index: 99;
   color: var(--color-white);
   text-align: center;
