@@ -70,21 +70,6 @@ const Title = styled.span`
   }
 `;
 
-const Subtitle = styled.span`
-  // Code logic for subtitle element
-  font-size: var(--font-xsmall);
-  letter-spacing: var(--spacing-subtitle);
-  line-height: var(--line-height-xsmall);
-  overflow: hidden;
-
-  // @MEDIAQUERY logic for bigger devices 980px
-  @media (min-width: 61.25em) {
-    // Design background from Figma software
-    font-size: var(--font-medium);
-    line-height: var(--line-height-small);
-  }
-`;
-
 // ------------------------------
 // Component
 // ------------------------------
