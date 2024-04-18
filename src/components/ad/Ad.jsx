@@ -54,7 +54,7 @@ const Title = styled.span`
   text-transform: uppercase;
   overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding-top: var(--padding-medium);
+  padding-top: var(--padding-xxsmall);
   padding-left: var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
@@ -78,7 +78,7 @@ function Ad() {
   return (
     <>
       <Hook>
-        <Title>Baja Upcoming</Title>
+        <Title>Upcoming</Title>
         <ButtonContainer
           target="_blank"
           href="https://storracing.com/registration/"
