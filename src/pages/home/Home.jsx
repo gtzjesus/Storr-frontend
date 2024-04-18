@@ -41,7 +41,7 @@ function Home() {
       <ResponsiveContainer id="baja-section">
         <Ad />
       </ResponsiveContainer>
-      <ResponsiveContainer>
+      <ResponsiveContainer id="schedule-section">
         <Schedule />
         <Footer />
       </ResponsiveContainer>

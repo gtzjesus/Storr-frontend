@@ -291,6 +291,11 @@ function Navigation() {
           <MenuItem className="menu-item">
             <Link to="baja-section">Baja</Link>
           </MenuItem>
+          <br />
+          <br />
+          <MenuItem className="menu-item">
+            <Link to="schedule-section">2024 Schedule</Link>
+          </MenuItem>
         </MenuContent>
       </MenuContainer>
     </>
