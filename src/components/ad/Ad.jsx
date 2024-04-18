@@ -33,23 +33,21 @@ const StyledAd = styled.div`
 
 const Hook = styled.div`
   // Code logic for positioning all information inside our hook
+  color: var(--color-white);
   position: absolute;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-top: var(--padding-small);
   z-index: 99;
-  color: var(--color-white);
   width: 100vw;
+  padding: var(--padding-medium) var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    color: var(--color-black);
-    padding-top: var(--padding-large);
   }
 `;
 
 const Title = styled.span`
+  display: flex;
   line-height: var(--line-height-small);
   font-size: var(--font-medium);
   letter-spacing: var(--spacing-title);
@@ -61,7 +59,6 @@ const Title = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-xlarge);
     line-height: var(--line-height-medium);
-    margin-right: var(--padding-giant);
   }
 `;
 
