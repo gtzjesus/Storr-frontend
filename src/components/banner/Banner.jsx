@@ -52,6 +52,12 @@ function Banner() {
       <Logo src="/sponsors/polanco.webp" alt="Polanco Logo" />
       <Logo src="/sponsors/pallares.webp" alt="Pallares Logo" />
       <Logo src="/sponsors/shaellers.webp" alt="Shaellers Logo" />
+      <Logo src="/sponsors/baja.webp" alt="Baja Logo" />
+      <Logo src="/sponsors/rezas.webp" alt="Rezas Logo" />
+      <Logo src="/sponsors/utv.webp" alt="Utv Logo" />
+      <Logo src="/sponsors/smh.webp" alt="SMH Logo" />
+      <Logo src="/sponsors/proauto.webp" alt="Proauto Logo" />
+      <Logo src="/sponsors/fina.webp" alt="Fina Logo" />
     </LogoContainer>
   );
 }

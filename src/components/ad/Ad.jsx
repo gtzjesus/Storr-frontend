@@ -44,6 +44,8 @@ const Hook = styled.div`
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
+    color: var(--color-black);
+    padding-top: var(--padding-large);
   }
 `;
 
