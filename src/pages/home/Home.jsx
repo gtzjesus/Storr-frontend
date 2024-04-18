@@ -5,6 +5,7 @@ import Navigation from '../../navigation/Navigation';
 import Ad from '../../components/ad/Ad';
 import Footer from '../../footer/Footer';
 import Video from '../../components/video/Video';
+import Schedule from '../../components/schedule/Schedule';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -39,6 +40,9 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
         <Ad />
+      </ResponsiveContainer>
+      <ResponsiveContainer>
+        <Schedule />
         <Footer />
       </ResponsiveContainer>
     </>
