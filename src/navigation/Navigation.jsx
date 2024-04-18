@@ -59,7 +59,7 @@ const Object = styled.div`
     // Design background from Figma software
     padding: 0 var(--padding-xxlarge);
   }
-  padding-top: var(--padding-xsmall);
+  padding-top: 0.75rem;
 `;
 
 const Hamburger = styled.div`
@@ -143,7 +143,6 @@ const MenuContent = styled.div`
   text-align: center;
   height: 100%;
   background-color: var(--color-white);
-  padding-left: var(--padding-medium);
 `;
 
 const MenuItem = styled.a`
@@ -276,17 +275,23 @@ function Navigation() {
         <MenuContent>
           <MenuItem className="menu-item">
             <Link to="performance-section">Performance</Link>
-            <br />
-            <br />
-
-            <Link to="clients-section">Clients</Link>
-            <br />
-            <br />
-
-            <Link to="pricing-section">Pricing</Link>
-            <br />
-            <br />
           </MenuItem>
+
+          <br />
+          <br />
+          <MenuItem className="menu-item">
+            <Link to="clients-section">Clients</Link>
+          </MenuItem>
+
+          <br />
+          <br />
+
+          <MenuItem className="menu-item">
+            <Link to="pricing-section">Pricing</Link>
+          </MenuItem>
+
+          <br />
+          <br />
         </MenuContent>
       </MenuContainer>
     </>
