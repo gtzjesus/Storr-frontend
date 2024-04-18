@@ -27,17 +27,13 @@ function Home() {
     <>
       <Navigation />
       <Landing />
-      <ResponsiveContainer>
-        <BannerContainer>
-          <Banner />
-        </BannerContainer>
-      </ResponsiveContainer>
+      <BannerContainer>
+        <Banner />
+      </BannerContainer>
       <Landing />
-      <ResponsiveContainer>
-        <BannerContainer>
-          <BannerSecond />
-        </BannerContainer>
-      </ResponsiveContainer>
+      <BannerContainer>
+        <BannerSecond />
+      </BannerContainer>
     </>
   );
 }
