@@ -26,7 +26,19 @@ const StyledLanding = styled.div`
   // Code logic for covering full-screen devices
   min-height: 70vh;
 
-  // Apply grayscale filter
+  filter: blur(1px);
+
+  // Add an overlay to improve text visibility
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); // Adjust the color and opacity as needed
+    z-index: 1;
+  }
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -41,11 +53,13 @@ const StyledLanding = styled.div`
 const Hook = styled.div`
   // Code logic for positioning all information inside our hook
   position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: var(--padding-xlarge) var(--padding-small);
   z-index: 9999;
+  color: var(--color-white);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -60,6 +74,7 @@ const Title = styled.span`
   letter-spacing: var(--spacing-title);
   text-transform: uppercase;
   overflow: hidden;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -107,20 +122,14 @@ const Subtitle = styled.span`
 function Landing() {
   return (
     <>
-      {/* <Hook>
+      <Hook>
         <Title>Storr</Title>
         <SpecialTitle>LLC</SpecialTitle>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <Subtitle>Southwest </Subtitle>
         <Subtitle>Texas</Subtitle>
         <Subtitle>Off Road</Subtitle>
         <Subtitle>Racing.</Subtitle>
-      </Hook> */}
+      </Hook>
       <StyledLanding />
     </>
   );
