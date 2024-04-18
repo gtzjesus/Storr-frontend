@@ -36,15 +36,14 @@ const Hook = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-small) var(--padding-xlarge);
+  text-align: center;
+  padding-top: var(--padding-small);
   z-index: 99;
   color: var(--color-white);
   width: 100vw;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
-    padding: var(--padding-medium);
   }
 `;
 
@@ -58,7 +57,6 @@ const Title = styled.span`
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
     font-size: var(--font-xlarge);
     line-height: var(--line-height-medium);
   }
