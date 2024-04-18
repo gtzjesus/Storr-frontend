@@ -3,6 +3,7 @@ import Landing from '../../components/landing/Landing';
 import Banner from '../../components/banner/Banner';
 import BannerSecond from '../../components/banner/BannerSecond';
 import Navigation from '../../navigation/Navigation';
+import Ad from '../../components/ad/Ad';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -30,7 +31,7 @@ function Home() {
       <BannerContainer>
         <Banner />
       </BannerContainer>
-      <Landing />
+      <Ad />
       <BannerContainer>
         <BannerSecond />
       </BannerContainer>
