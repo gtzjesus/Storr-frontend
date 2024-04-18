@@ -3,10 +3,10 @@ import styled, { keyframes } from 'styled-components';
 // Define the animation for continuous scrolling
 const scroll = keyframes`
   0% {
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
 `;
 
