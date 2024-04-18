@@ -18,7 +18,7 @@ import styled from 'styled-components';
 
 const StyledAd = styled.div`
   // Set the background image
-  background: url('backgrounds/sand.webp');
+  background: url('ads/ad.webp');
   background-size: cover; // Scale the background image to cover the entire element
   background-repeat: no-repeat; // Prevent the image from repeating
   background-position: center; // Center the background image
