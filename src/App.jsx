@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes
 import GlobalStyles from './styles/GlobalStyles';
 import Home from './pages/home/Home';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import './styles/App.css';
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 // REACT QUERY INTEGRATION
 const queryClient = new QueryClient({
   defaultOptions: {

@@ -59,6 +59,16 @@ const Object = styled.div`
     // Design background from Figma software
     padding: 0 var(--padding-xxlarge);
   }
+  padding-top: var(--padding-xsmall);
+`;
+
+const Hamburger = styled.div`
+  padding: 0 var(--padding-small);
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    // Design background from Figma software
+    padding: 0 var(--padding-xxlarge);
+  }
 `;
 
 const Icon = styled.a`
@@ -129,9 +139,10 @@ const Menu = styled.button`
 const MenuContent = styled.div`
   display: flex;
   flex-direction: column; /* Display menu items vertically */
+  justify-content: center;
+  text-align: center;
   height: 100%;
   background-color: var(--color-white);
-  padding-top: var(--padding-xlarge);
   padding-left: var(--padding-medium);
 `;
 
@@ -248,8 +259,8 @@ function Navigation() {
             <Logo src="/logos/storr.webp" alt="storr"></Logo>
           </Icon>
         </Object>
-        <Object>
-          {/* <!-- Menu Container for links --> */}
+        {/* <!-- Menu Container for links --> */}
+        <Hamburger>
           <Menu onClick={toggleMenu}>
             {isMenuOpen ? (
               <MenuImg src="/icons/close.webp" alt="Close"></MenuImg>
@@ -259,7 +270,7 @@ function Navigation() {
               </>
             )}
           </Menu>
-        </Object>
+        </Hamburger>
       </StyledNav>
       <MenuContainer isOpen={isMenuOpen}>
         <MenuContent>
