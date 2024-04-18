@@ -50,7 +50,20 @@ const VideoIframe = styled.iframe`
 function Video() {
   return (
     <StyledVideo>
-      <Title>Point of view</Title>
+      <Title>
+        Point <br /> of <br />
+        view
+      </Title>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <VideoContainer>
         <VideoIframe
           src="https://www.youtube.com/embed/Vua1KPP9hfY"
