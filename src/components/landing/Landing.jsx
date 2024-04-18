@@ -71,20 +71,6 @@ const Title = styled.span`
   }
 `;
 
-const SpecialTitle = styled.span`
-  line-height: var(--line-height-small);
-  font-size: var(--font-small);
-  text-transform: uppercase;
-  overflow: hidden;
-
-  // @MEDIAQUERY logic for bigger devices 980px
-  @media (min-width: 61.25em) {
-    // Design background from Figma software
-    font-size: var(--font-xlarge);
-    line-height: var(--line-height-medium);
-  }
-`;
-
 const Subtitle = styled.span`
   // Code logic for subtitle element
   font-size: var(--font-xsmall);
@@ -110,12 +96,6 @@ function Landing() {
     <>
       <Hook>
         <Title>Ready to race?</Title>
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <SpecialTitle>Best in the desert.</SpecialTitle>
       </Hook>
       <StyledLanding />
     </>
