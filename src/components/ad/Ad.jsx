@@ -39,7 +39,6 @@ const Hook = styled.div`
   flex-direction: column;
   z-index: 99;
   width: 100vw;
-  padding: var(--padding-medium) var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -54,6 +53,7 @@ const Title = styled.span`
   text-transform: uppercase;
   overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: var(--padding-medium) var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
