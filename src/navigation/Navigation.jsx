@@ -80,7 +80,7 @@ const MenuContainer = styled.div`
   overflow-y: auto;
   z-index: 999;
   background-color: transparent;
-  animation: ${fadeIn} 2.5s ease, ${slideIn} 1.5s ease;
+  animation: ${fadeIn} 1.5s ease, ${slideIn} 2s ease;
 `;
 
 const Menu = styled.button`
@@ -130,7 +130,7 @@ const MenuContent = styled.div`
   display: flex;
   flex-direction: column; /* Display menu items vertically */
   height: 100%;
-  background-color: var(--color-black);
+  background-color: var(--color-white);
   padding-top: var(--padding-xlarge);
   padding-left: var(--padding-medium);
 `;
@@ -138,7 +138,7 @@ const MenuContent = styled.div`
 const MenuItem = styled.a`
   display: inline-block;
   padding: 8px 16px;
-  color: var(--color-white);
+  color: var(--color-black);
   text-decoration: none;
   font-size: var(--font-links);
   cursor: pointer;
