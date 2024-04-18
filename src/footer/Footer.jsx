@@ -22,8 +22,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
   background-color: var(--color-white);
   color: var(--color-black);
-  padding: var(--padding-large);
-  padding-bottom: var(--padding-large);
+  padding: var(--padding-medium);
   gap: var(--gap-large);
 `;
 
