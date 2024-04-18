@@ -25,20 +25,7 @@ const StyledLanding = styled.div`
 
   // Code logic for covering full-screen devices
   min-height: 70vh;
-
   filter: blur(1px);
-
-  // Add an overlay to improve text visibility
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1); // Adjust the color and opacity as needed
-    z-index: 1;
-  }
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
