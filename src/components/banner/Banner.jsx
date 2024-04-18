@@ -19,12 +19,11 @@ const SponsorContainer = styled.div`
   padding: var(--padding-medium) 0;
 
   // Apply the continuous scroll animation
-  animation: ${scroll} 5s linear infinite;
+  animation: ${scroll} 15s linear infinite;
 `;
 
 const Sponsor = styled.img`
-  height: 2.5rem;
-  padding-right: var(--padding-medium);
+  padding-right: var(--padding-small);
 `;
 
 // Component
