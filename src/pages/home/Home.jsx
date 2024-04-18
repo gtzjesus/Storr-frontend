@@ -31,7 +31,7 @@ function Home() {
       <BannerContainer>
         <Banner />
       </BannerContainer>
-      <ResponsiveContainer>
+      <ResponsiveContainer id="baja-section">
         <Ad />
       </ResponsiveContainer>
       <BannerContainer>
