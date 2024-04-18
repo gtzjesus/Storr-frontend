@@ -17,18 +17,17 @@ import styled from 'styled-components';
 // This section has all CSS styles configured for every HTML element.
 
 const StyledAd = styled.div`
-  // Set the background image with parallax effect
-  background: url('backgrounds/sand.webp') no-repeat center center;
-  background-attachment: fixed; // Create parallax effect
+  // Set the background image
+  background: url('backgrounds/sand.webp');
   background-size: cover; // Scale the background image to cover the entire element
-  min-height: 100vh; // Cover the full height of the viewport
+  background-repeat: no-repeat; // Prevent the image from repeating
+  background-position: center; // Center the background image
 
-  // Add padding for any content inside the component
-  padding: var(--padding-medium);
+  // Code logic for covering full-screen devices
+  min-height: 70vh;
 
-  // Media query for larger devices (980px and above)
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Add any adjustments for larger screens here if needed
   }
 `;
 
