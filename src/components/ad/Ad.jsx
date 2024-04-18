@@ -65,7 +65,7 @@ const Title = styled.span`
 `;
 
 const ButtonContainer = styled.a`
-  padding-top: var(--padding-medium);
+  padding-top: var(--padding-xsmall);
   padding-left: var(--padding-small);
 `;
 
@@ -78,12 +78,12 @@ function Ad() {
   return (
     <>
       <Hook>
-        <Title>Upcoming</Title>
+        <Title>Baja Upcoming</Title>
         <ButtonContainer
           target="_blank"
           href="https://storracing.com/registration/"
         >
-          <Button>Register here</Button>
+          <Button>Click here to register</Button>
         </ButtonContainer>
       </Hook>
       <StyledAd />

@@ -33,6 +33,8 @@ const variations = {
   primary: css`
     color: var(--color-white);
     background-color: var(--color-link);
+    text-transform: uppercase;
+    font-size: var(--font-button);
   `,
 };
 

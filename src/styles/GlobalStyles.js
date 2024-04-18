@@ -67,6 +67,8 @@ const GlobalStyles = createGlobalStyle`
     --font-links: 1.75rem;
     --font-smmd: 1.95rem;
     --font-copyright: 0.75rem;
+    --font-button: 0.5rem;
+
 
 
 
