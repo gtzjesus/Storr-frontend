@@ -36,9 +36,11 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
         <Ad />
-        <Video />
-        <Footer />
       </ResponsiveContainer>
+      <ResponsiveContainer id="pointofview-section">
+        <Video />
+      </ResponsiveContainer>
+      <Footer />
     </>
   );
 }

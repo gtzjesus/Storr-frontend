@@ -289,9 +289,9 @@ function Navigation() {
 
           <br />
           <br />
-          {/* <MenuItem className="menu-item">
-            <Link to="clients-section">Clients</Link>
-          </MenuItem> */}
+          <MenuItem className="menu-item">
+            <Link to="pointofview-section">Point of View</Link>
+          </MenuItem>
 
           <br />
           <br />
