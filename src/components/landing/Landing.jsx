@@ -74,7 +74,6 @@ const Title = styled.span`
 const SpecialTitle = styled.span`
   line-height: var(--line-height-small);
   font-size: var(--font-small);
-  letter-spacing: var(--spacing-title);
   text-transform: uppercase;
   overflow: hidden;
 
@@ -111,7 +110,12 @@ function Landing() {
     <>
       <Hook>
         <Title>Ready to race?</Title>
-        <SpecialTitle>Best in the desert</SpecialTitle>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <SpecialTitle>Best in the desert.</SpecialTitle>
       </Hook>
       <StyledLanding />
     </>
