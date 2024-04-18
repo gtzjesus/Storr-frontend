@@ -18,7 +18,7 @@ import styled from 'styled-components';
 
 const StyledAd = styled.div`
   // Set the background image
-  background: url('ads/ad.webp');
+  background: url('backgrounds/sand.webp');
   background-size: cover; // Scale the background image to cover the entire element
   background-repeat: no-repeat; // Prevent the image from repeating
   background-position: center; // Center the background image
@@ -54,19 +54,10 @@ const Hook = styled.div`
   }
 `;
 
-const Title = styled.span`
-  line-height: var(--line-height-small);
-  font-size: var(--font-large);
-  letter-spacing: var(--spacing-title);
-  text-transform: uppercase;
-  overflow: hidden;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+const Advertisement = styled.img`
+  padding: 0 5rem;
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    // Design background from Figma software
-    font-size: var(--font-xlarge);
-    line-height: var(--line-height-medium);
   }
 `;
 
@@ -94,7 +85,7 @@ function Ad() {
   return (
     <>
       <Hook>
-        <Title>Ready to race?</Title>
+        <Advertisement src="/ads/ad.webp" />
       </Hook>
       <StyledAd />
     </>
