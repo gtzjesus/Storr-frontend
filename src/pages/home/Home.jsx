@@ -34,11 +34,11 @@ function Home() {
           <Banner />
         </BannerContainer>
       </ResponsiveContainer>
-      <ResponsiveContainer id="baja-section">
-        <Ad />
-      </ResponsiveContainer>
       <ResponsiveContainer id="pointofview-section">
         <Video />
+      </ResponsiveContainer>
+      <ResponsiveContainer id="baja-section">
+        <Ad />
       </ResponsiveContainer>
       <Footer />
     </>
