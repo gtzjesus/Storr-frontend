@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -118,7 +118,6 @@ const Menu = styled.button`
     transform: translateX(-50%);
     width: 80%;
     height: 3px;
-    background-color: white;
     transition: all 0.3s ease;
   }
   ::before {
