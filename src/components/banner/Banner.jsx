@@ -3,10 +3,10 @@ import styled, { keyframes } from 'styled-components';
 // Define the animation for continuous scrolling
 const scroll = keyframes`
   0% {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(50%);
   }
 `;
 
@@ -19,7 +19,7 @@ const LogoContainer = styled.div`
   padding: var(--padding-medium) 0;
 
   // Apply the continuous scroll animation
-  animation: ${scroll} linear infinite;
+  animation: ${scroll} 5s linear infinite;
 `;
 
 const Logo = styled.img`
