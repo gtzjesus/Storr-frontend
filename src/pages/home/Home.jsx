@@ -31,7 +31,9 @@ function Home() {
       <BannerContainer>
         <Banner />
       </BannerContainer>
-      <Ad />
+      <ResponsiveContainer>
+        <Ad />
+      </ResponsiveContainer>
       <BannerContainer>
         <BannerSecond />
       </BannerContainer>
