@@ -39,8 +39,8 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="baja-section">
         <Ad />
+        <Footer />
       </ResponsiveContainer>
-      <Footer />
     </>
   );
 }
