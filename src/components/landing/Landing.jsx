@@ -31,6 +31,10 @@ const StyledLanding = styled.div`
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Adjustments for larger devices can go here
+    background: url('backgrounds/landing_second.webp');
+    background-size: contain; // Scale the background image to cover the entire element
+    background-repeat: no-repeat; // Prevent the image from repeating
+    background-position: center; // Center the background image
   }
 `;
 
