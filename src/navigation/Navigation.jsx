@@ -284,24 +284,13 @@ function Navigation() {
       <MenuContainer isOpen={isMenuOpen}>
         <MenuContent>
           <MenuItem className="menu-item">
-            <Link to="baja-section">Baja</Link>
+            <Link to="pointofview-section">Point of View</Link>
           </MenuItem>
-
           <br />
           <br />
           <MenuItem className="menu-item">
-            <Link to="pointofview-section">Point of View</Link>
+            <Link to="baja-section">Baja</Link>
           </MenuItem>
-
-          <br />
-          <br />
-
-          {/* <MenuItem className="menu-item">
-            <Link to="pricing-section">Pricing</Link>
-          </MenuItem> */}
-
-          <br />
-          <br />
         </MenuContent>
       </MenuContainer>
     </>
