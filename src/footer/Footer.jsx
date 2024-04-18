@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
   background-color: var(--color-white);
   color: var(--color-black);
   padding: var(--padding-medium);
-  gap: var(--gap-large);
+  gap: var(--gap-medium);
 `;
 
 const Logo = styled.img`
@@ -51,6 +51,10 @@ const Signature = styled.div`
   justify-content: center;
 `;
 
+const Sponsor = styled.img`
+  height: var(--font-medium);
+`;
+
 const Copyright = styled.a`
   font-size: var(--font-copyright);
 `;
@@ -75,6 +79,13 @@ function Footer() {
       <Signature>
         <Logo src="/logos/storr.webp" alt="storr"></Logo>
       </Signature>
+
+      <Signature>
+        <Sponsor src="/sponsors/kongster.webp" alt="Kongster Sponsor"></Sponsor>
+        <Sponsor src="/sponsors/dxl.webp" alt="DXL Sponsor"></Sponsor>
+        <Sponsor src="/sponsors/union.webp" alt="Union Sponsor"></Sponsor>
+      </Signature>
+
       <Signature>
         <Copyright>
           <Tag target="_blank" href="https://www.worldhello.us">
