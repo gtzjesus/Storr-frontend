@@ -35,7 +35,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  padding-right: 25px;
+  padding-right: 35px;
   height: 8.5vh;
 `;
 
