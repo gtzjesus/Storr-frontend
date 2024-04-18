@@ -10,6 +10,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
+import Button from '../../ui/buttons/Button';
 
 // ------------------------------
 // Styled Componenets
@@ -33,7 +34,7 @@ const StyledAd = styled.div`
 
 const Hook = styled.div`
   // Code logic for positioning all information inside our hook
-  color: var(--color-white);
+  color: var(--color-black);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -53,13 +54,19 @@ const Title = styled.span`
   text-transform: uppercase;
   overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: var(--padding-medium) var(--padding-small);
+  padding-top: var(--padding-medium);
+  padding-left: var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     font-size: var(--font-xlarge);
     line-height: var(--line-height-medium);
   }
+`;
+
+const ButtonContainer = styled.a`
+  padding-top: var(--padding-medium);
+  padding-left: var(--padding-small);
 `;
 
 // ------------------------------
@@ -72,6 +79,12 @@ function Ad() {
     <>
       <Hook>
         <Title>Upcoming</Title>
+        <ButtonContainer
+          target="_blank"
+          href="https://storracing.com/registration/"
+        >
+          <Button>Register here</Button>
+        </ButtonContainer>
       </Hook>
       <StyledAd />
     </>
