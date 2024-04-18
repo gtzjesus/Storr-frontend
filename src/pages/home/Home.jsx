@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Landing from '../../components/landing/Landing';
 import Banner from '../../components/banner/Banner';
 import BannerSecond from '../../components/banner/BannerSecond';
+import Navigation from '../../navigation/Navigation';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -24,6 +25,7 @@ function Home() {
   // Code Logic HTML (styled-components)
   return (
     <>
+      <Navigation />
       <Landing />
       <ResponsiveContainer>
         <BannerContainer>

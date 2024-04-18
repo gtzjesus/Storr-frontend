@@ -46,12 +46,12 @@ const Logo = styled.img`
 function Banner() {
   return (
     <LogoContainer>
-      <Logo src="/logos/baja.webp" alt="Baja Logo" />
-      <Logo src="/logos/rezas.webp" alt="Rezas Logo" />
-      <Logo src="/logos/utv.webp" alt="Utv Logo" />
-      <Logo src="/logos/smh.webp" alt="SMH Logo" />
-      <Logo src="/logos/proauto.webp" alt="Proauto Logo" />
-      <Logo src="/logos/fina.webp" alt="Fina Logo" />
+      <Logo src="/sponsors/baja.webp" alt="Baja Logo" />
+      <Logo src="/sponsors/rezas.webp" alt="Rezas Logo" />
+      <Logo src="/sponsors/utv.webp" alt="Utv Logo" />
+      <Logo src="/sponsors/smh.webp" alt="SMH Logo" />
+      <Logo src="/sponsors/proauto.webp" alt="Proauto Logo" />
+      <Logo src="/sponsors/fina.webp" alt="Fina Logo" />
     </LogoContainer>
   );
 }
