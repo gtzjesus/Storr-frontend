@@ -36,7 +36,7 @@ const Hook = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-small);
+  padding: var(--padding-small) var(--padding-xlarge);
   z-index: 99;
   color: var(--color-white);
   width: 100vw;
@@ -44,7 +44,7 @@ const Hook = styled.div`
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Design background from Figma software
-    padding: var(--padding-xlarge) var(--padding-large);
+    padding: var(--padding-medium);
   }
 `;
 
