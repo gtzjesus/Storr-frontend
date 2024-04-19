@@ -85,8 +85,6 @@ function Video() {
           allowFullScreen
         />
       </VideoContainer>
-      <SubTitle>STORR Revenge 200</SubTitle>
-      <br />
       <SubTitle>Whiplash Racing</SubTitle>
     </StyledVideo>
   );
