@@ -30,6 +30,22 @@ const Title = styled.span`
   }
 `;
 
+const SubTitle = styled.span`
+  line-height: var(--line-height-small);
+  font-size: var(--font-small);
+  color: var(--color-white);
+  text-transform: uppercase;
+  overflow: hidden;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    // Design background from Figma software
+    font-size: var(--font-xlarge);
+    line-height: var(--line-height-medium);
+  }
+`;
+
 // Styled container for the video
 const VideoContainer = styled.div`
   width: 100%;
@@ -62,7 +78,6 @@ function Video() {
       <br />
       <br />
       <br />
-
       <VideoContainer>
         <VideoIframe
           src="https://www.youtube.com/embed/Vua1KPP9hfY"
@@ -70,6 +85,9 @@ function Video() {
           allowFullScreen
         />
       </VideoContainer>
+      <SubTitle>STORR Revenge 200</SubTitle>
+      <br />
+      <SubTitle>Whiplash Racing</SubTitle>
     </StyledVideo>
   );
 }
