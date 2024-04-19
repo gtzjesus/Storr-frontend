@@ -40,7 +40,7 @@ const Hook = styled.div`
   flex-direction: column;
   z-index: 99;
   width: 100vw;
-  padding: var(--padding-medium);
+  padding: var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -49,7 +49,7 @@ const Hook = styled.div`
 
 const Title = styled.span`
   line-height: var(--line-height-small);
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   letter-spacing: var(--spacing-title);
   text-transform: uppercase;
   overflow: hidden;
@@ -58,7 +58,7 @@ const Title = styled.span`
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Design background from Figma software
-    font-size: var(--font-xlarge);
+    font-size: var(--font-large);
     line-height: var(--line-height-medium);
   }
 `;
@@ -82,7 +82,7 @@ function End() {
           target="_blank"
           href="https://storracing.com/registration/"
         >
-          <Button>Click to start</Button>
+          <Button>Click to start today</Button>
         </ButtonContainer>
       </Hook>
       <StyledEnd />
