@@ -7,6 +7,7 @@ import Footer from '../../footer/Footer';
 import Video from '../../components/video/Video';
 import Schedule from '../../components/schedule/Schedule';
 import Results from '../../components/results/Results';
+import End from '../../components/end/End';
 
 /* Media query for larger devices */
 const ResponsiveContainer = styled.div`
@@ -47,6 +48,7 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="results-section">
         <Results />
+        <End />
         <Footer />
       </ResponsiveContainer>
     </>
