@@ -26,7 +26,7 @@ const StyledResults = styled.div`
   background-position: center; // Center the background image
 
   // Code logic for covering full-screen devices
-  min-height: 125vh;
+  min-height: 150vh;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
