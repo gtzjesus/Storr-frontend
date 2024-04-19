@@ -82,6 +82,8 @@ function Results() {
   return (
     <>
       <Hook>
+        <Title>Results are in!</Title>
+        <br />
         <Title>El Paso 200, 2024</Title>
         <FaqsContainer>
           <Faqs />

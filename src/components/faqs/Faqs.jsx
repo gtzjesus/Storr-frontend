@@ -66,6 +66,7 @@ const StyledFaqs = styled.div`
   flex-direction: column;
   background: var(--color-white);
   color: var(--color-black);
+  width: 570px;
 `;
 
 const Intro = styled.div`
