@@ -47,7 +47,7 @@ const Content = styled.p`
 `;
 
 const Image = styled.img`
-  width: 400px;
+  width: 350px;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
