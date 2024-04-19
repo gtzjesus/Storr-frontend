@@ -45,10 +45,8 @@ function Home() {
       <ResponsiveContainer id="schedule-section">
         <Schedule />
       </ResponsiveContainer>
-      <ResponsiveContainer id="results-section">
-        <Results />
-        <Footer />
-      </ResponsiveContainer>
+      <Results />
+      <Footer />
     </>
   );
 }

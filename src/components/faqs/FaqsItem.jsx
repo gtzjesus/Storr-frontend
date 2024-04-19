@@ -20,17 +20,12 @@ const StyledItem = styled.div`
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 20px 24px;
   cursor: pointer;
-
   // Code logic for arranging children
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
-`;
-
-const Number = styled.p`
-  font-weight: 500;
 `;
 
 const Title = styled.p`
@@ -40,8 +35,6 @@ const Title = styled.p`
 const Icon = styled.p`
   font-weight: 500;
 `;
-
-const Image = styled.img``;
 
 const Content = styled.p`
   grid-column: 2 / -1;
@@ -59,12 +52,16 @@ function FaqsItem({ title, num, currentOpen, onOpen, children, image }) {
   const isOpen = currentOpen === num;
 
   return (
-    <div onClick={() => onOpen(isOpen ? null : num)}>
-      <h3>{title}</h3>
-      {isOpen && (
-        <div>{image ? <img src={image} alt={title} /> : <p>{children}</p>}</div>
-      )}
-    </div>
+    <StyledItem onClick={() => onOpen(isOpen ? null : num)}>
+      <Content>
+        <Title>{title}</Title>
+        {isOpen && (
+          <div>
+            {image ? <img src={image} alt={title} /> : <p>{children}</p>}
+          </div>
+        )}
+      </Content>
+    </StyledItem>
   );
 }
 

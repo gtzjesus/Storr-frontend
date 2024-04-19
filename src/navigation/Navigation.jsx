@@ -299,7 +299,7 @@ function Navigation() {
           <br />
           <br />
           <MenuItem className="menu-item">
-            <Link to="results-section">Results</Link>
+            <Link to="results-section">El Paso 200 Results</Link>
           </MenuItem>
         </MenuContent>
       </MenuContainer>
