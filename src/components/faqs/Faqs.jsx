@@ -72,7 +72,6 @@ const Intro = styled.div`
   // Code logic for arranging children
   display: flex;
   flex-direction: column;
-  padding: var(--padding-large) var(--padding-small);
 `;
 
 // ------------------------------

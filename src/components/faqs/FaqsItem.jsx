@@ -37,9 +37,8 @@ const Icon = styled.p`
 `;
 
 const Content = styled.p`
-  grid-column: 2 / -1;
-  padding-bottom: 16px;
-  line-height: 1.6;
+  padding-bottom: var(--padding-xxsmall);
+  line-height: 1;
 `;
 
 // ------------------------------
