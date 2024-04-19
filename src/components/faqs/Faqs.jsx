@@ -19,19 +19,39 @@ import { useState } from 'react';
 const faqs = [
   {
     title: 'Bike Pro',
-    text: 'This minimum monthly subscription gives you a complete custom design followed by a full website that includes Hosting, Security, Maintenance, Analytics, Performance, Testing, Emails and more! Keep in mind there are other higher subscriptions available, such that give you even more functionalities such as Payments, Databases, SEO and more depending on your needs.',
+    image: '/faqs/faqs.webp',
   },
   {
-    title: 'What is the timeframe for my new website?',
-    text: 'The duration for crafting a website varies per project. Generally, our team dedicates approximately 5 to 9 weeks, starting from the initial discovery session to the final launch of your new website.',
+    title: 'Bike Sportsman',
+    image: '/faqs/bikesportsman.webp',
   },
   {
-    title: 'What does the web development process look like?',
-    text: 'We commence by defining your websites purpose. Followed by conducting thorough market research, where we then create a performance strategy to attract new clients. Next, we design a layout tailored for conversions,  then execute the design, and ultimately launch your new website. ',
+    title: 'Quad Sportsman',
+    image: '/faqs/quadsportsman.webp',
   },
   {
-    title: 'Is there ongoing support once website is complete?',
-    text: 'Our dedication lies in nurturing enduring partnerships with our clients, prioritizing ongoing support and maintenance services over one-time transactions. We are here to ensure your website remains current and operates at its best.',
+    title: 'Unlimited',
+    image: '/faqs/unlimited.webp',
+  },
+  {
+    title: 'Heavy Metal',
+    image: '/faqs/heavy-metal.webp',
+  },
+  {
+    title: 'Air Cooled',
+    image: '/faqs/air-cooled.webp',
+  },
+  {
+    title: 'UTV Pro Turbo',
+    image: '/faqs/utv-pro-turbo.webp',
+  },
+  {
+    title: 'UTV Pro NA',
+    image: '/faqs/utv-pro-na.webp',
+  },
+  {
+    title: 'UTV Sportsman',
+    image: '/faqs/utv-sportsman.webp',
   },
 ];
 
@@ -55,14 +75,6 @@ const Intro = styled.div`
   padding: var(--padding-large) var(--padding-small);
 `;
 
-const Title = styled.span`
-  font-size: var(--font-medium);
-`;
-
-const Special = styled.span`
-  font-size: var(--font-large);
-`;
-
 // ------------------------------
 // Component
 // ------------------------------
@@ -74,21 +86,19 @@ function Faqs() {
   return (
     <StyledFaqs>
       <Intro>
-        <Title>
-          Frequently <Special>Asked Questions</Special>
-        </Title>
+        {faqs.map((element, index) => (
+          <FaqsItem
+            currentOpen={currentOpen}
+            onOpen={setCurrentOpen}
+            title={element.title}
+            num={index}
+            key={element.title}
+            image={element.image}
+          >
+            {element.text}
+          </FaqsItem>
+        ))}
       </Intro>
-      {faqs.map((element, index) => (
-        <FaqsItem
-          currentOpen={currentOpen}
-          onOpen={setCurrentOpen}
-          title={element.title}
-          num={index}
-          key={element.title}
-        >
-          {element.text}
-        </FaqsItem>
-      ))}
     </StyledFaqs>
   );
 }

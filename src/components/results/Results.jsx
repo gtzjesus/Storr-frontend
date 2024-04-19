@@ -50,13 +50,12 @@ const Hook = styled.div`
 const Title = styled.span`
   display: flex;
   line-height: var(--line-height-small);
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   letter-spacing: var(--spacing-title);
   text-transform: uppercase;
   overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding-top: var(--padding-small);
-  padding-left: var(--padding-small);
+  padding: var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
@@ -83,9 +82,7 @@ function Results() {
   return (
     <>
       <Hook>
-        <Title>El Paso 200,</Title>
-        <Title> 2024</Title>
-
+        <Title>El Paso 200, 2024</Title>
         <FaqsContainer>
           <Faqs />
         </FaqsContainer>
@@ -94,7 +91,7 @@ function Results() {
           target="_blank"
           href="https://storracing.com/el-paso-200-2024/"
         >
-          <Button>Click to view full page results</Button>
+          <Button>Click to view full page</Button>
         </ButtonContainer>
       </Hook>
       <StyledResults />

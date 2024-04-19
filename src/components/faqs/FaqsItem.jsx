@@ -41,6 +41,8 @@ const Icon = styled.p`
   font-weight: 500;
 `;
 
+const Image = styled.img``;
+
 const Content = styled.p`
   grid-column: 2 / -1;
   padding-bottom: 16px;
@@ -53,69 +55,16 @@ const Content = styled.p`
 // This section has our React Component which handles the data
 // Receives multiple parameters to be used to interact with displaying/not displaying modal
 
-function FaqsItem({ num, title, currentOpen, onOpen, children }) {
-  const firstPerformanceRef = useRef(null);
+function FaqsItem({ title, num, currentOpen, onOpen, children, image }) {
+  const isOpen = currentOpen === num;
 
-  // ------------------------------
-  // useEffect
-  // ------------------------------
-  // Code logic Animation , a useEffect so that happens once component mounts
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    // Observing all elements of interest
-    const elementsToObserve = [firstPerformanceRef];
-    elementsToObserve.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-    });
-
-    // Cleanup function
-    return () => {
-      elementsToObserve.forEach((ref) => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      });
-    };
-  }, []);
-  // Code logic to check which faq number is currently open
-  const isOpen = num === currentOpen;
-
-  // Handles opening and closing the modal (toggle)
-  function handleToggle() {
-    onOpen(isOpen ? null : num);
-  }
   return (
-    <>
-      <div ref={firstPerformanceRef} className="hidden">
-        {/* <!-- Main Container with state dynamic class names --> */}
-        <StyledItem
-          className={`${isOpen ? 'open' : ''}`}
-          onClick={handleToggle}
-        >
-          <Number className="number">
-            {num < 9 ? `0${num + 1}` : num + 1}
-          </Number>
-          <Title>{title}</Title>
-          <Icon>{isOpen ? '-' : '+'}</Icon>
-          {isOpen && <Content>{children}</Content>}
-        </StyledItem>
-        <hr />
-      </div>
-    </>
+    <div onClick={() => onOpen(isOpen ? null : num)}>
+      <h3>{title}</h3>
+      {isOpen && (
+        <div>{image ? <img src={image} alt={title} /> : <p>{children}</p>}</div>
+      )}
+    </div>
   );
 }
 
