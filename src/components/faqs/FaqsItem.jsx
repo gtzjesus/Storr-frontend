@@ -21,8 +21,7 @@ const StyledItem = styled.div`
   padding: 20px 24px;
   cursor: pointer;
   // Code logic for arranging children
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
@@ -30,11 +29,7 @@ const StyledItem = styled.div`
 
 const Displayed = styled.div`
   display: flex;
-  gap: var(--gap-large);
-`;
-
-const Number = styled.p`
-  font-weight: 500;
+  justify-content: space-between;
 `;
 
 const Title = styled.p`
@@ -64,9 +59,6 @@ function FaqsItem({ title, num, currentOpen, onOpen, children, image }) {
     <>
       <StyledItem onClick={() => onOpen(isOpen ? null : num)}>
         <Displayed>
-          <Number className="number">
-            {num < 9 ? `0${num + 1}` : num + 1}
-          </Number>
           <Title>{title}</Title>
           <Icon>{isOpen ? '-' : '+'}</Icon>
         </Displayed>
