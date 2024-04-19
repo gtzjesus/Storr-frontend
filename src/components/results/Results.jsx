@@ -99,7 +99,9 @@ function Results() {
   return (
     <>
       <Hook>
-        <Title>Results are in!</Title>
+        <Title>
+          Results <br /> are in!
+        </Title>
         <SubTitle>El Paso 200 </SubTitle>
         <SubTitle>2024 Winners</SubTitle>
         <FaqsContainer>
