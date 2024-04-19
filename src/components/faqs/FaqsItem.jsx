@@ -28,6 +28,15 @@ const StyledItem = styled.div`
   align-items: center;
 `;
 
+const Displayed = styled.div`
+  display: flex;
+  gap: var(--gap-large);
+`;
+
+const Number = styled.p`
+  font-weight: 500;
+`;
+
 const Title = styled.p`
   font-weight: 500;
 `;
@@ -52,16 +61,24 @@ function FaqsItem({ title, num, currentOpen, onOpen, children, image }) {
   const isOpen = currentOpen === num;
 
   return (
-    <StyledItem onClick={() => onOpen(isOpen ? null : num)}>
+    <>
+      <StyledItem onClick={() => onOpen(isOpen ? null : num)}>
+        <Displayed>
+          <Number className="number">
+            {num < 9 ? `0${num + 1}` : num + 1}
+          </Number>
+          <Title>{title}</Title>
+          <Icon>{isOpen ? '-' : '+'}</Icon>
+        </Displayed>
+      </StyledItem>
       <Content>
-        <Title>{title}</Title>
         {isOpen && (
           <div>
             {image ? <img src={image} alt={title} /> : <p>{children}</p>}
           </div>
         )}
       </Content>
-    </StyledItem>
+    </>
   );
 }
 
