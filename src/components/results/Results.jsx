@@ -11,6 +11,7 @@
 
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
+import Faqs from '../faqs/Faqs';
 
 // ------------------------------
 // Styled Componenets
@@ -69,6 +70,10 @@ const ButtonContainer = styled.a`
   padding-left: var(--padding-small);
 `;
 
+const FaqsContainer = styled.div`
+  padding: var(--padding-xsmall);
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -81,11 +86,15 @@ function Results() {
         <Title>El Paso 200,</Title>
         <Title> 2024</Title>
 
+        <FaqsContainer>
+          <Faqs />
+        </FaqsContainer>
+
         <ButtonContainer
           target="_blank"
           href="https://storracing.com/el-paso-200-2024/"
         >
-          <Button>Click to view results</Button>
+          <Button>Click to view full page results</Button>
         </ButtonContainer>
       </Hook>
       <StyledResults />
