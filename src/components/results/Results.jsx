@@ -26,10 +26,11 @@ const StyledResults = styled.div`
   background-position: center; // Center the background image
 
   // Code logic for covering full-screen devices
-  min-height: 100vh;
+  min-height: 125vh;
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
+    min-height: 100vh;
   }
 `;
 
@@ -64,6 +65,22 @@ const Title = styled.span`
   }
 `;
 
+const SubTitle = styled.span`
+  display: flex;
+  color: var(--color-black);
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  overflow: hidden;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0 var(--padding-small);
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    font-size: var(--font-medium);
+    line-height: var(--line-height-medium);
+  }
+`;
+
 const ButtonContainer = styled.a`
   padding-top: var(--padding-xsmall);
   padding-left: var(--padding-small);
@@ -83,8 +100,8 @@ function Results() {
     <>
       <Hook>
         <Title>Results are in!</Title>
-        <br />
-        <Title>El Paso 200, 2024</Title>
+        <SubTitle>El Paso 200 </SubTitle>
+        <SubTitle>2024 Winners</SubTitle>
         <FaqsContainer>
           <Faqs />
         </FaqsContainer>
