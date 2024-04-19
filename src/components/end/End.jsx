@@ -78,6 +78,7 @@ function End() {
     <>
       <Hook>
         <Title>Lets Race!</Title>
+        <br />
         <ButtonContainer
           target="_blank"
           href="https://storracing.com/registration/"

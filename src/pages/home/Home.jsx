@@ -48,7 +48,7 @@ function Home() {
       </ResponsiveContainer>
       <ResponsiveContainer id="results-section">
         <Results />
-        <End />
+        {/* <End /> */}
         <Footer />
       </ResponsiveContainer>
     </>
