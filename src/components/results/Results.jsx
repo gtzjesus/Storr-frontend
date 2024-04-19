@@ -50,7 +50,7 @@ const Hook = styled.div`
 const Title = styled.span`
   display: flex;
   line-height: var(--line-height-small);
-  font-size: var(--font-medium);
+  font-size: var(--font-smmd);
   letter-spacing: var(--spacing-title);
   text-transform: uppercase;
   overflow: hidden;
@@ -59,7 +59,7 @@ const Title = styled.span`
 
   // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
-    font-size: var(--font-xlarge);
+    font-size: var(--font-medium);
     line-height: var(--line-height-medium);
   }
 `;

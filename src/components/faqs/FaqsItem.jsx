@@ -39,6 +39,7 @@ const Icon = styled.p`
 const Content = styled.p`
   padding-bottom: var(--padding-xxsmall);
   line-height: 1;
+  /* font-size: var(--font-small); */
 `;
 
 // ------------------------------

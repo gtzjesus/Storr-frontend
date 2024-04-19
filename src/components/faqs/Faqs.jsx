@@ -66,7 +66,11 @@ const StyledFaqs = styled.div`
   flex-direction: column;
   background: var(--color-white);
   color: var(--color-black);
-  width: 570px;
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 48em) {
+    width: 570px;
+  }
 `;
 
 const Intro = styled.div`
