@@ -46,6 +46,10 @@ const Content = styled.p`
   /* font-size: var(--font-small); */
 `;
 
+const Image = styled.img`
+  width: 90vw;
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -66,7 +70,7 @@ function FaqsItem({ title, num, currentOpen, onOpen, children, image }) {
       <Content>
         {isOpen && (
           <div>
-            {image ? <img src={image} alt={title} /> : <p>{children}</p>}
+            {image ? <Image src={image} alt={title} /> : <p>{children}</p>}
           </div>
         )}
       </Content>
