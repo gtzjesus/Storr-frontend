@@ -39,7 +39,6 @@ const Hook = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 99;
-  width: 100vw;
   padding: var(--padding-small);
 
   // @MEDIAQUERY logic for bigger devices 980px
