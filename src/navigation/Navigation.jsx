@@ -157,7 +157,7 @@ const MenuContent = styled.div`
 
 const MenuItem = styled.a`
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 18px;
   color: var(--color-black);
   text-decoration: none;
   font-size: var(--font-links);
@@ -284,7 +284,9 @@ function Navigation() {
       <MenuContainer isOpen={isMenuOpen}>
         <MenuContent>
           <MenuItem className="menu-item">
-            <Link to="pointofview-section">Point of View</Link>
+            <Link to="pointofview-section">
+              Point of <br /> View
+            </Link>
           </MenuItem>
           <br />
           <br />
@@ -294,12 +296,17 @@ function Navigation() {
           <br />
           <br />
           <MenuItem className="menu-item">
-            <Link to="schedule-section">2024 Schedule</Link>
+            <Link to="schedule-section">
+              Schedule
+              <br /> 2024
+            </Link>
           </MenuItem>
           <br />
           <br />
           <MenuItem className="menu-item">
-            <Link to="results-section">El Paso 200 Results</Link>
+            <Link to="results-section">
+              El Paso 200 <br /> Results
+            </Link>
           </MenuItem>
         </MenuContent>
       </MenuContainer>
