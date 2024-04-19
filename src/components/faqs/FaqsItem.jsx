@@ -47,7 +47,12 @@ const Content = styled.p`
 `;
 
 const Image = styled.img`
-  width: 90vw;
+  width: 450px;
+
+  // @MEDIAQUERY logic for bigger devices 980px
+  @media (min-width: 61.25em) {
+    width: 550px;
+  }
 `;
 
 // ------------------------------
